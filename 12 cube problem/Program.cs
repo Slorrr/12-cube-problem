@@ -7,6 +7,23 @@
         //Variable for writing the result to a file
         //StreamWriter outputFile = new StreamWriter(@"C:\cue\True.txt");
 
+        //Output characteristics
+        Cube[] cubes = new Cube[lentgh];
+        for (int i = 0; i < lentgh; i++)
+        {
+            cubes[i] = new Cube(i + 1);
+        }
+
+        foreach (Cube cube1 in cubes)
+        {
+            Console.Write(cube1.edge.ToString() + " - edge; " +
+                cube1.area.ToString() + " - area; " +
+                cube1.allEdges.ToString() + " - allEdges; " +
+                cube1.volume.ToString() + " - volume;");
+            Console.WriteLine();
+        }
+
+
         List<int> fst = new List<int>(); //Array for entering elements of the first group
         List<int> snd = new List<int>(); //Array for entering elements of the second group
 
