@@ -5,7 +5,7 @@
         int count = 0;
         int lentgh = 20;
         //Variable for writing the result to a file
-        StreamWriter outputFile = new StreamWriter(@"C:\cue\True.txt");
+        //StreamWriter outputFile = new StreamWriter(@"C:\cue\True.txt");
 
         //Output characteristics
         Cube[] cubes = new Cube[lentgh];
@@ -457,24 +457,25 @@
             Console.WriteLine();
             Console.WriteLine("////////////////////");
             Console.WriteLine();
+            Console.WriteLine(count + " - combination");
 
             //Write to file
-            outputFile.WriteLine("First group:");
-            foreach (int f in fst)
-            {
-                outputFile.Write(f.ToString() + " ");
-            }
-            outputFile.WriteLine();
+            //outputFile.WriteLine("First group:");
+            //foreach (int f in fst)
+            //{
+            //    outputFile.Write(f.ToString() + " ");
+            //}
+            //outputFile.WriteLine();
 
-            outputFile.WriteLine("Second group:");
-            foreach (int f in snd)
-            {
-                outputFile.Write(f.ToString() + " ");
-            }
-            outputFile.WriteLine();
-            Console.WriteLine(count + " - combination");
+            //outputFile.WriteLine("Second group:");
+            //foreach (int f in snd)
+            //{
+            //    outputFile.Write(f.ToString() + " ");
+            //}
+            //outputFile.WriteLine();
+            //Console.WriteLine(count + " - combination");
         }
-        outputFile.Close();
+        //outputFile.Close();
 
 
     }
