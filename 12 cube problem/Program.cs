@@ -395,8 +395,6 @@
         }
         Console.WriteLine();
 
-
-        
         //Creating an array of cubes and creating groups
         List<Cube> cubes1 = new List<Cube>();
         foreach(int f in fst)
@@ -415,7 +413,6 @@
         }
         GroupOfCubes group2 = new GroupOfCubes(cubes2);
 
-      
         bool isTrue = EqualsGroups(group1, group2); //Compare group values
         if (isTrue == false) //If the group values are equal
         {
@@ -434,7 +431,6 @@
             count++;
 
             goto start;
-
         }
         else //If the groups are equal
         {
@@ -483,12 +479,6 @@
     //Group Comparison Method
     public static bool EqualsGroups(GroupOfCubes cubes1, GroupOfCubes cubes2)
     {
-        //Console.WriteLine("1 группа     2 группа");
-        //Console.WriteLine(boxes1.sumEdge.ToString() + " " + boxes2.sumEdge.ToString());
-        //Console.WriteLine(boxes1.sumArea.ToString() + " " + boxes2.sumArea.ToString());
-        //Console.WriteLine(boxes1.sumAllEges.ToString() + " " + boxes2.sumAllEges.ToString());
-        //Console.WriteLine(boxes1.sumVolume.ToString() + " " + boxes2.sumVolume.ToString());
-
         //Compare all values
         if (cubes1.sumEdge == cubes2.sumEdge &&
             cubes1.sumArea == cubes2.sumArea &&
