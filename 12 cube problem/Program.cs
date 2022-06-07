@@ -27,7 +27,7 @@
         List<int> fst = new List<int>(); //Array for entering elements of the first group
         List<int> snd = new List<int>(); //Array for entering elements of the second group
 
-        Random rand = new Random(); //Variable to create a random number
+        Random rand = new Random(DateTime.Now.Millisecond); //Variable to create a random number
 
         int a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12; //Variables for entering random numbers
 
